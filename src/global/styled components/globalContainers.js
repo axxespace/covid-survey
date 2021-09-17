@@ -13,6 +13,7 @@ export const PageContainer = styled.div`
   overflow: hidden;
 `;
 
+//container of all inputs on form page(Form1, Form2, Form3, Form 4)
 export const FormContainer = styled.fieldset`
   border: none;
   position: absolute;
@@ -60,7 +61,7 @@ export const FormContainer = styled.fieldset`
   }
 `;
 
-
+//container input section on form page(Form1, Form2, Form3, Form 4)
 export const Form = styled.div`
   & ~ div {
     margin: 48px 0 0 0;
@@ -124,6 +125,7 @@ export const Form = styled.div`
   }
 `;
 
+//container of each radio element
 export const RadioContainer = styled.div`
   label{
     cursor: pointer;
@@ -171,6 +173,7 @@ export const RadioContainer = styled.div`
   }
 `;
 
+//form pages (Form1, Form2, Form3, Form 4) background image container
 export const BackgroundImage = styled.img`
   position: absolute;
   top: 94px;
