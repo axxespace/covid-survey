@@ -46,7 +46,7 @@ const Page2 = ({...props}) => {
         if (radioValid1 && radioValid2 && testNumberValid && antigensNumberValid && covidDateValid) props.setCurrentPage(prev => prev + 1);
     }
 
-    // we need following functions to open next step radios if we click on needed button
+    // we need following functions to change radio step states on radio select
     const covidYes = (prop) => {
         if(prop.target.value === "yes") {
             setHadCovid(true);
