@@ -29,7 +29,8 @@ const Page3 = ({...props}) => {
     const [radioValid1, setRadioValid1] = useState();
     const [radioValid2, setRadioValid2] = useState();
     const [radioValid3, setRadioValid3] = useState();
-
+  
+    // we need following states to open next radio steps
     const [vaccinated, setVaccinated] = useState();
     const [firstAndRegistered, setFirstAndRegistered] = useState();
     const [planning, setPlanning] = useState();
@@ -54,7 +55,7 @@ const Page3 = ({...props}) => {
 
     }
 
-    // we need following functions to open next step radios if we click on needed button
+    // we need following functions to change radio step states on radio select
     const checkVaccination = (prop) => {
         setRadioValid1(true);
         if (prop.target.value === "yes") {
