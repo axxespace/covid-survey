@@ -6,6 +6,7 @@ import {isRadioValid} from "../../global/functions/radioValitityFunc";
 
 //The component contains Form element's second page
 const Page2 = ({...props}) => {
+    // we need following states to open next radio steps
     const [hadCovid, setHadCovid] = useState();
     const [hadTest, setHadTest] = useState();
 
